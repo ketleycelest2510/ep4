@@ -9,9 +9,26 @@ main {
 }
 footer{
     grid-area: roda;
-    position: relative;
     background-color: purple;
 }
+footer{
+    text-align: center;
+    display: flex;
+
+}
+footer li{
+    display: inline;
+    margin: 0 0 0 100px;
+}
+footer a{
+    text-decoration: none; 
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+    border: solid rgb(255, 255, 255);
+    background: rgb(61, 223, 252);
+    transition: 1s;
+}
+
 body{
     display: grid;
     grid-template-areas:
