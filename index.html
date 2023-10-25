@@ -1,91 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia</title>
+    <title>Historia-Era vargas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="fundo1" onload="ola_usuario()">
     <header>
-        <img src="img.jpg" alt="">
+        <img class="vargas" src="imagem/eravargas.jpg" alt="logo era vargas">
+        <li></li>
     </header>
     <main>
+        <h2 id="nome_usuario" ></h2>
+        <h1>Questionário</h1>
         <form>
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta1" value="correta"> a) <br>
+            <h2 class="cor">Questão 1</h2>
+            <h3 class="letra">a barata diz que tem 7 saias de ?</h3>
+            <input type="radio" name="resposta1" value="correta"> A) <br>
             <input type="radio" name="resposta1" value="incorreta"> B) <br>
             <input type="radio" name="resposta1" value="incorreta"> C) <br>
-            <input type="radio" name="resposta1" value="incorreta"> C) <br>
-            <p id="resultado_1"></p>
+            <input type="radio" name="resposta1" value="incorreta"> D) <br>
+            <p id="resultado_1" class="correto"></p><p id="errada1" class="errada"></p>
 
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta2" value="correta"> a) <br>
+            <h2 class="cor">Questão 2</h2>
+            <h3 class="letra">bla bla bla bla ?</h3>
+            <input type="radio" name="resposta2" value="correta"> A) <br>
             <input type="radio" name="resposta2" value="incorreta"> B) <br>
             <input type="radio" name="resposta2" value="incorreta"> C) <br>
-            <input type="radio" name="resposta2" value="incorreta"> C) <br>
-            <p id="resultado_2"></p>
+            <input type="radio" name="resposta2" value="incorreta"> D) <br>
+            <p id="resultado_2" class="correto"></p><p id="errada2" class="errada"></p>
 
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta3" value="correta"> a) <br>
+            <h2 class="cor">Questão 3</h2>
+            <h3 class="letra">bla bla bla bla ?</h3>
+            <input type="radio" name="resposta3" value="correta"> A) <br>
             <input type="radio" name="resposta3" value="incorreta"> B) <br>
             <input type="radio" name="resposta3" value="incorreta"> C) <br>
-            <input type="radio" name="resposta3" value="incorreta"> C) <br>
-            <p id="resultado_3"></p>
+            <input type="radio" name="resposta3" value="incorreta"> D) <br>
+            <p id="resultado_3" class="correto"></p><p id="errada3" class="errada"></p>
 
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta4" value="correta"> a) <br>
+            <h2 class="cor">Questão 4</h2>
+            <h3 class="letra">bla bla bla bla ?</h3>
+            <input type="radio" name="resposta4" value="correta"> A) <br>
             <input type="radio" name="resposta4" value="incorreta"> B) <br>
             <input type="radio" name="resposta4" value="incorreta"> C) <br>
-            <input type="radio" name="resposta4" value="incorreta"> C) <br>
-            <p id="resultado_4"></p>
+            <input type="radio" name="resposta4" value="incorreta"> D) <br>
+            <p id="resultado_4" class="correto"></p><p id="errada4" class="errada"></p>
 
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta5" value="correta"> a) <br>
+            <h2 class="cor">Questão 5</h2>
+            <h3 class="letra">bla bla bla bla ?</h3>
+            <input type="radio" name="resposta5" value="correta"> A) <br>
             <input type="radio" name="resposta5" value="incorreta"> B) <br>
             <input type="radio" name="resposta5" value="incorreta"> C) <br>
-            <input type="radio" name="resposta5" value="incorreta"> C) <br>
-            <p id="resultado_5"></p>
+            <input type="radio" name="resposta5" value="incorreta"> D) <br>
+            <p id="resultado_5" class="correto"></p><p id="errada5" class="errada"></p>
 
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta6" value="correta"> a) <br>
+            <h2 class="cor">Questão 6</h2>
+            <h3 class="letra">bla bla bla bla ?</h3>
+            <input type="radio" name="resposta6" value="correta"> A) <br>
             <input type="radio" name="resposta6" value="incorreta"> B) <br>
             <input type="radio" name="resposta6" value="incorreta"> C) <br>
-            <input type="radio" name="resposta6" value="incorreta"> C) <br>
-            <p id="resultado_6"></p>
+            <input type="radio" name="resposta6" value="incorreta"> D) <br>
+            <p id="resultado_6" class="correto"></p><p id="errada6" class="errada"></p>
 
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta7" value="correta"> a) <br>
+            <h2 class="cor">Questão 7</h2>
+            <h3 class="letra">bla bla bla bla ?</h3>
+            <input type="radio" name="resposta7" value="correta"> A) <br>
             <input type="radio" name="resposta7" value="incorreta"> B) <br>
             <input type="radio" name="resposta7" value="incorreta"> C) <br>
-            <input type="radio" name="resposta7" value="incorreta"> C) <br>
-            <p id="resultado_7"></p>
+            <input type="radio" name="resposta7" value="incorreta"> D) <br>
+            <p id="resultado_7" class="correto"></p><p id="errada7" class="errada"></p>
 
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta8" value="correta"> a) <br>
+            <h2 class="cor">Questão 8</h2>
+            <h3 class="letra">bla bla bla bla ?</h3>
+            <input type="radio" name="resposta8" value="correta"> A) <br>
             <input type="radio" name="resposta8" value="incorreta"> B) <br>
             <input type="radio" name="resposta8" value="incorreta"> C) <br>
-            <input type="radio" name="resposta8" value="incorreta"> C) <br>
-            <p id="resultado_8"></p>
+            <input type="radio" name="resposta8" value="incorreta"> D) <br>
+            <p id="resultado_8" class="correto"></p><p id="errada8" class="errada"></p>
 
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta9" value="correta"> a) <br>
+            <h2 class="cor">Questão 9</h2>
+            <h3 class="letra">bla bla bla bla ?</h3>
+            <input type="radio" name="resposta9" value="correta"> A) <br>
             <input type="radio" name="resposta9" value="incorreta"> B) <br>
             <input type="radio" name="resposta9" value="incorreta"> C) <br>
-            <input type="radio" name="resposta9" value="incorreta"> C) <br>
-            <p id="resultado_9"></p>
+            <input type="radio" name="resposta9" value="incorreta"> D) <br>
+            <p id="resultado_9" class="correto"></p><p id="errada9" class="errada"></p>
 
-            <h3>bla bla bla bla ?</h3>
-            <input type="radio" name="resposta10" value="correta"> a) <br>
+            <h2 class="cor">Questão 10</h2>
+            <h3 class="letra">bla bla bla bla ?</h3>
+            <input type="radio" name="resposta10" value="correta"> A) <br>
             <input type="radio" name="resposta10" value="incorreta"> B) <br>
             <input type="radio" name="resposta10" value="incorreta"> C) <br>
-            <input type="radio" name="resposta10" value="incorreta"> C) <br>
-            <p id="resultado_10"></p>
-            <button type="button" onclick="botao_resposta()"> verificar</button>
+            <input type="radio" name="resposta10" value="incorreta"> D) <br>
+            <p id="resultado_10" class="correto"></p><p id="errada10" class="errada"></p>
+            <button class="botao" type="button" onclick="botao_resposta()"> verificar</button>
+            <script src="script.js"></script>
         </form>
-        <script src="script.js"></script>
-       
     </main>
-    <section>RETRATIL</section>
+    <footer>
+        <img class="vargas1" src="imagem/eravargas.jpg" alt="logo era vargas">
+        <div>
+            <li>
+                <ul>
+                    <p>
+                    <a href="https://instagram.com/ketley_celestino?igshid=MjEwN2IyYWYwYw==">Ketley Celestino</a><!--insta-->
+                    </p>
+                    <p>
+                    <a href="https://instagram.com/luana_tidre?igshid=NGExMmI2YTkyZg==">Luana Tidre</a><!--insta-->
+                    </P>
+                    <p>
+                    <a href="https://instagram.com/gui_bql_0106?igshid=MjEwN2IyYWYwYw==">Guilherme Braga</a><!--insta-->
+                    </p>
+                </ul>
+            
+            </li> 
+        </div>
+        
+    </footer>
 </body>
+
 </html>

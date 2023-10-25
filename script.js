@@ -1,75 +1,86 @@
 function botao_resposta() {
-    var respostausuario1 = document.queryselector('input[name="resposta1"]: checked');
-    var respostausuario2 = document.queryselector('input[name="resposta2"]: checked');
-    var respostausuario3 = document.queryselector('input[name="resposta3"]: checked');
-    var respostausuario4 = document.queryselector('input[name="resposta4"]: checked');
-    var respostausuario5 = document.queryselector('input[name="resposta5"]: checked');
-    var respostausuario6 = document.queryselector('input[name="resposta6"]: checked');
-    var respostausuario7 = document.queryselector('input[name="resposta7"]: checked');
-    var respostausuario8 = document.queryselector('input[name="resposta8"]: checked');
-    var respostausuario9 = document.queryselector('input[name="resposta9"]: checked');
-    var respostausuario10 = document.queryselector('input[name="resposta10"]: checked');
- }
+    var respostausuario1 = document.querySelector('input[name="resposta1"]:checked');
+    var respostausuario2 = document.querySelector('input[name="resposta2"]:checked');
+    var respostausuario3 = document.querySelector('input[name="resposta3"]:checked');
+    var respostausuario4 = document.querySelector('input[name="resposta4"]:checked');
+    var respostausuario5 = document.querySelector('input[name="resposta5"]:checked');
+    var respostausuario6 = document.querySelector('input[name="resposta6"]:checked');
+    var respostausuario7 = document.querySelector('input[name="resposta7"]:checked');
+    var respostausuario8 = document.querySelector('input[name="resposta8"]:checked');
+    var respostausuario9 = document.querySelector('input[name="resposta9"]:checked');
+    var respostausuario10 = document.querySelector('input[name="resposta10"]:checked');
 
 
-    if (respostaUsuario1 && respostaUsuario2 && respostaUsuario3 && respostaUsuario4 && respostaUsuario5 && respostaUsuario6 && respostaUsuario7 && respostaUsuario8 && respostaUsuario9 && respostaUsuario10) {
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_1").innerHTML = "acertou!!";
+    if(respostausuario1 && respostausuario2 && respostausuario3 && respostausuario4 && respostausuario5 && respostausuario6 && respostausuario7 && respostausuario8 && respostausuario9 && respostausuario10){
+        
+        if(respostausuario1.value === "correta"){
+            document.getElementById("resultado_1").innerHTML = "acertou";
         }
         else{
-            document.getElementById("errado1").innerHTML = "Errou!!";
+            document.getElementById("errada1").innerHTML = "errada";
         }
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_2").innerHTML = "acertou!!";
-        }
-        else{
-            document.getElementById("errado2").innerHTML = "Errou!!";
-        }
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_3").innerHTML = "acertou!!";
+        if(respostausuario2.value === "correta"){
+            document.getElementById("resultado_2").innerHTML = "acertou";
         }
         else{
-            document.getElementById("errado3").innerHTML = "Errou!!";
+            document.getElementById("errada2").innerHTML = "errada";
         }
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_4").innerHTML = "acertou!!";
-        }
-        else{
-            document.getElementById("errado4").innerHTML = "Errou!!";
-        }
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_5").innerHTML = "acertou!!";
+        if(respostausuario3.value === "correta"){
+            document.getElementById("resultado_3").innerHTML = "acertou";
         }
         else{
-            document.getElementById("errado5").innerHTML = "Errou!!";
+            document.getElementById("errada3").innerHTML = "errada";
         }
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_6").innerHTML = "acertou!!";
-        }
-        else{
-            document.getElementById("errado6").innerHTML = "Errou!!";
-        }
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_7").innerHTML = "acertou!!";
+        if(respostausuario4.value === "correta"){
+            document.getElementById("resultado_4").innerHTML = "acertou";
         }
         else{
-            document.getElementById("errado7").innerHTML = "Errou!!";
+            document.getElementById("errada4").innerHTML = "errada";
         }
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_8").innerHTML = "acertou!!";
-        }
-        else{
-            document.getElementById("errado8").innerHTML = "Errou!!";
-        }
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_9").innerHTML = "acertou!!";
+        if(respostausuario5.value === "correta"){
+            document.getElementById("resultado_5").innerHTML = "acertou";
         }
         else{
-            document.getElementById("errado9").innerHTML = "Errou!!";
+            document.getElementById("errada5").innerHTML = "errada";
         }
-        if(respostaUsuario1.value === "correta"){
-            document.getElementById("resultado_10").innerHTML = "acertou!!";
+        if(respostausuario6.value === "correta"){
+            document.getElementById("resultado_6").innerHTML = "acertou";
         }
         else{
-            document.getElementById("errado10").innerHTML = "Errou!!";
+            document.getElementById("errada6").innerHTML = "errada";
         }
+        if(respostausuario7.value === "correta"){
+            document.getElementById("resultado_7").innerHTML = "acertou";
+        }
+        else{
+            document.getElementById("errada7").innerHTML = "errada";
+        }
+        if(respostausuario8.value === "correta"){
+            document.getElementById("resultado_8").innerHTML = "acertou";
+        }
+        else{
+            document.getElementById("errada8").innerHTML = "errada";
+        }
+        if(respostausuario9.value === "correta"){
+            document.getElementById("resultado_9").innerHTML = "acertou";
+        }
+        else{
+            document.getElementById("errada9").innerHTML = "errada";
+        }
+        if(respostausuario10.value === "correta"){
+            document.getElementById("resultado_10").innerHTML = "acertou";
+        }
+        else{
+            document.getElementById("errada10").innerHTML = "errada";
+        }
+    }
+    else{
+        alert("Não deixar questões em aberto!");
+    }
+}
+function ola_usuario(){
+    var nome_usu = prompt ("Escreva seu nome:");
+    if(nome_usu){
+        document.getElementById("nome_usuario").innerHTML = nome_usu;
+    }
+}

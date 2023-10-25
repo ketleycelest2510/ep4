@@ -1,15 +1,90 @@
-header {
+header{
     grid-area: cabe;
-    position: relative;
-    background-color: purple;
+    background-image: linear-gradient(to right, rgba(162, 104, 255, 0.726) , rgba(110, 5, 145, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
 }
-main { 
+main{
     grid-area: prin;
-    background-color: rgb(234, 198, 255);
+    background-color: rgb(255, 255, 255);
 }
 footer{
     grid-area: roda;
-    background-color: purple;
+    background-image: linear-gradient(to right, rgba(162, 104, 255, 0.726) , rgba(110, 5, 145, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "cabe cabe"
+    "prin prin"
+    "roda roda";
+    grid-template-rows: auto;
+    grid-template-columns: 300px auto;
+}
+header img{
+    height: 150px;
+    width: auto;
+}
+@media only screen and (max-width: 820px) {
+    body{
+        grid-template-areas: 
+        "cabe"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 50px 500px 200px;
+    }   
+    footer img{
+        display: none;
+    }
+    footer{
+        display: none;
+    } 
+}
+@media only screen and (max-width: 480px) {
+    body{
+        grid-template-areas: 
+        "cabe"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 100px;
+    }
+    section{
+        display: flex;
+    }
+    header{
+        display: none;
+    }
+    
+}
+.correto{
+    color: green;
+}
+.errada{
+    color: red;
+}
+.vargas{
+    width: 200px;
+    border-radius: 20%;
+    margin: 15px;
+}
+.vargas1{
+    width: 250px;
+    border-radius: 20%;
+    margin: 15px;
+}
+.botao{
+    border-radius: 10%;
+    box-shadow: 5px 10px 15px rgb(184, 30, 240);
+    width: 18%;
+    font-size: large;
+    margin-top: 24px;
+    margin: 24px;
+}
+.cor{
+    color: rgb(186, 138, 232);
+}
+.letra{
+    font-style: italic;
 }
 footer{
     text-align: center;
@@ -22,38 +97,9 @@ footer li{
 }
 footer a{
     text-decoration: none; 
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: rgb(0, 0, 0);
     border: solid rgb(255, 255, 255);
-    background: rgb(61, 223, 252);
+    background: rgb(158, 125, 236);
     transition: 1s;
 }
-
-body{
-    display: grid;
-    grid-template-areas:
-    " cabe cabe cabe  "
-    " prin prin prin "
-    " roda roda roda";
-    grid-template-columns: 180px auto;
-    grid-template-rows: 210px auto 200px;
-}
-.logo{
-    border-radius: 10%;
-    transition: 1s;
-    width: 8%;
-    display: flex;
-}
-
-header{
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-}
-footer{
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-}
-
-
