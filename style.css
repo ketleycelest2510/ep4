@@ -1,105 +1,137 @@
-header{
+header{/*cabeçario*/
     grid-area: cabe;
-    background-image: linear-gradient(to right, rgba(162, 104, 255, 0.726) , rgba(110, 5, 145, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
+    background-image: linear-gradient(to right, rgba(106, 140, 255, 0.726) , rgba(1, 34, 204, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
 }
-main{
+main{/*parte principal*/
     grid-area: prin;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(110, 109, 109, 0.5);/*cor transparente sobre imagem de fundo*/
 }
-footer{
+footer{/*rodapé*/
     grid-area: roda;
-    background-image: linear-gradient(to right, rgba(162, 104, 255, 0.726) , rgba(110, 5, 145, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
+    background-image: linear-gradient(to right, rgba(106, 140, 255, 0.726) , rgba(1, 34, 204, 0.7),rgb(0, 0, 0));/* faz um degrade da cor do elemento */
 }
-body{
-    display: grid;
+body{/*corpo do texto*/
+    display: grid;/*disposiçao grid*/
     grid-template-areas: 
     "cabe cabe"
     "prin prin"
     "roda roda";
-    grid-template-rows: auto;
-    grid-template-columns: 300px auto;
+    grid-template-rows: auto;/*indica tamanho das linhas*/
+    grid-template-columns: 300px auto;/*indica tamanho das colunas*/
 }
-header img{
-    height: 150px;
-    width: auto;
+header img{/*logo*/
+    height: auto;/*altura*/
+    min-width: 300px;/*tamanho*/
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 820px) {/*para deixar responsivo*/
     body{
         grid-template-areas: 
         "cabe"
         "prin"
         "roda";
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 50px 500px 200px;
+        grid-template-columns: 1fr;/*indica tamanho das colunas*/
+        grid-template-rows: auto auto 200px;/*indica tamanho das linhas*/
     }   
     footer img{
-        display: none;
+        display: none;/*nao mostrar a imagem do footer*/
     }
     footer{
-        display: none;
+        display: none;/*nao mostrar o rodape*/
     } 
+    .vargas{/*imagem logo cabeçalho*/
+        min-width: 300px;
+    }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 530px) {/*para deixar responsivo*/
     body{
         grid-template-areas: 
         "cabe"
         "prin"
         "roda";
+        grid-template-columns: 1fr;/*indica tamanho das colunas*/
+        grid-template-rows: auto auto 100px;/*indica tamanho das linhas*/
+    }   
+    footer img{
+        display: none;/*nao mostrar a imagem do footer*/
+    }
+    footer{
+        display: none;/*nao mostrar o rodape*/
+    } 
+    .vargas{/*imagem logo cabeçalho*/
+        min-width: 300px;
+    }
+
+}
+@media only screen and (max-width: 480px) {/*responsivo para celular*/
+    body{
+        grid-template-areas: 
+        "cabe"
+        "prin";
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 500px 100px;
+        grid-template-rows: auto auto;
     }
     section{
         display: flex;
     }
-    header{
-        display: none;
+    footer{
+        display: none;/*nao mostrar o rodape*/
+    }  
+    .vargas{/*imagem logo cabeçalho*/
+        min-width: 300px;
     }
-    
 }
-.correto{
-    color: green;
+.correto{/*cor certa*/
+    color: rgb(98, 245, 7);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: 1s;
+    border-bottom: 5px;
+    max-width: 400px;
+    margin-left: 32%;
 }
-.errada{
-    color: red;
+.errada{/*cor errada*/
+    color: rgb(253, 2, 2);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 1s;
+    border-bottom: 5px;
+    max-width: 400px;
+    margin-left: 32%;
 }
-.vargas{
-    width: 200px;
-    border-radius: 20%;
-    margin: 15px;
+.vargas{/*imagem logo cabeçalho*/
+    width: 15%;
+    height: auto;
+    border-radius: 6%;
+    margin: 2%;
 }
-.vargas1{
-    width: 250px;
-    border-radius: 20%;
-    margin: 15px;
+.vargas1{/*imagem logo rodape*/
+    width: 15%;
+    height: auto;
+    border-radius: 6%;
+    margin: 2%;
 }
-.botao{
+.botao{/* dimensoes do botao*/
     border-radius: 10%;
-    box-shadow: 5px 10px 15px rgb(184, 30, 240);
+    box-shadow: 5px 10px 15px rgb(30, 40, 240);
     width: 18%;
     font-size: large;
     margin-top: 24px;
     margin: 24px;
+    margin-left: 32%;
 }
 .cor{
-    color: rgb(186, 138, 232);
+    color: rgb(23, 47, 223);/*cor dos titulos*/
+    margin-left: 32%;
 }
 .letra{
-    font-style: italic;
+    font-style: italic;/* fonte da letra*/
+    margin-left: 32%;
 }
-footer{
-    text-align: center;
-    display: flex;
-
+.titulo{
+    margin-left: 32%;
 }
-footer li{
-    display: inline;
-    margin: 0 0 0 100px;
-}
-footer a{
-    text-decoration: none; 
-    font-size: 1.1rem;
-    color: rgb(0, 0, 0);
-    border: solid rgb(255, 255, 255);
-    background: rgb(158, 125, 236);
-    transition: 1s;
+.pergunta{
+    margin-left: 32%;
 }

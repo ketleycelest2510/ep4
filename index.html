@@ -6,117 +6,100 @@
     <title>Historia-Era vargas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="fundo1" onload="ola_usuario()">
+<body class="fundo2" onload="ola_usuario()">
     <header>
         <img class="vargas" src="imagem/eravargas.jpg" alt="logo era vargas">
-        <li></li>
     </header>
     <main>
         <h2 id="nome_usuario" ></h2>
-        <h1>Questionário</h1>
-        <form>
-            <h2 class="cor">Questão 1</h2>
-            <h3 class="letra">a barata diz que tem 7 saias de ?</h3>
-            <input type="radio" name="resposta1" value="correta"> A) <br>
-            <input type="radio" name="resposta1" value="incorreta"> B) <br>
-            <input type="radio" name="resposta1" value="incorreta"> C) <br>
-            <input type="radio" name="resposta1" value="incorreta"> D) <br>
+        <h1 class="titulo">Questionário</h1>
+        <form><!--começo das perguntas-->
+            <h2 class="cor">Questão 1</h2><!--questoes-->
+            <h3 class="letra">Quem foi Getúlio Vargas na história do Brasil?</h3>
+            <input type="radio" class="pergunta" name="resposta1" value="incorreta"> A. Um escritor renomado.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta1" value="incorreta"> B. Um importante líder sindical. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta1" value="correta"> C. Um político que exerceu a presidência do Brasil em duas ocasiões. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta1" value="incorreta"> D. Um explorador que mapeou a região amazônica.<br><!--respostas-->
             <p id="resultado_1" class="correto"></p><p id="errada1" class="errada"></p>
 
-            <h2 class="cor">Questão 2</h2>
-            <h3 class="letra">bla bla bla bla ?</h3>
-            <input type="radio" name="resposta2" value="correta"> A) <br>
-            <input type="radio" name="resposta2" value="incorreta"> B) <br>
-            <input type="radio" name="resposta2" value="incorreta"> C) <br>
-            <input type="radio" name="resposta2" value="incorreta"> D) <br>
+            <h2 class="cor">Questão 2</h2><!--questoes-->
+            <h3 class="letra">Qual evento marcou o início da Era Vargas em 1930?</h3>
+            <input type="radio" class="pergunta" name="resposta2" value="incorreta"> A. O Carnaval de 1930.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta2" value="correta"> B.A Revolução de 1930. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta2" value="incorreta"> C. O Tratado de Petrópolis.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta2" value="incorreta"> D. A Proclamação da República.<br><!--respostas-->
             <p id="resultado_2" class="correto"></p><p id="errada2" class="errada"></p>
 
-            <h2 class="cor">Questão 3</h2>
-            <h3 class="letra">bla bla bla bla ?</h3>
-            <input type="radio" name="resposta3" value="correta"> A) <br>
-            <input type="radio" name="resposta3" value="incorreta"> B) <br>
-            <input type="radio" name="resposta3" value="incorreta"> C) <br>
-            <input type="radio" name="resposta3" value="incorreta"> D) <br>
+            <h2 class="cor">Questão 3</h2><!--questoes-->
+            <h3 class="letra">O que representou o Estado Novo durante a Era Vargas?</h3>
+            <input type="radio" class="pergunta" name="resposta3" value="incorreta"> A.Um período de democracia e pluralismo político. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta3" value="correta"> B. Um regime autoritário com censura à imprensa e restrições às liberdades civis.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta3" value="incorreta"> C. Uma era de grande prosperidade econômica.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta3" value="incorreta"> D.  Um governo descentralizado com autonomia para os estados.<br><!--respostas-->
             <p id="resultado_3" class="correto"></p><p id="errada3" class="errada"></p>
 
-            <h2 class="cor">Questão 4</h2>
-            <h3 class="letra">bla bla bla bla ?</h3>
-            <input type="radio" name="resposta4" value="correta"> A) <br>
-            <input type="radio" name="resposta4" value="incorreta"> B) <br>
-            <input type="radio" name="resposta4" value="incorreta"> C) <br>
-            <input type="radio" name="resposta4" value="incorreta"> D) <br>
+            <h2 class="cor">Questão 4</h2><!--questoes-->
+            <h3 class="letra">Qual foi o impacto da Era Vargas na legislação trabalhista no Brasil?</h3>
+            <input type="radio" class="pergunta" name="resposta4" value="incorreta"> A. Não houve mudanças significativas na legislação trabalhista.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta4" value="correta"> B. Foi criada a CLT (Consolidação das Leis do Trabalho) que estabeleceu direitos trabalhistas. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta4" value="incorreta"> C. Os trabalhadores foram proibidos de se sindicalizar.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta4" value="incorreta"> D.  Os direitos dos trabalhadores foram completamente revogados.<br><!--respostas-->
             <p id="resultado_4" class="correto"></p><p id="errada4" class="errada"></p>
 
-            <h2 class="cor">Questão 5</h2>
-            <h3 class="letra">bla bla bla bla ?</h3>
-            <input type="radio" name="resposta5" value="correta"> A) <br>
-            <input type="radio" name="resposta5" value="incorreta"> B) <br>
-            <input type="radio" name="resposta5" value="incorreta"> C) <br>
-            <input type="radio" name="resposta5" value="incorreta"> D) <br>
+            <h2 class="cor">Questão 5</h2><!--questoes-->
+            <h3 class="letra">Qual evento levou à queda de Getúlio Vargas em 1945?</h3>
+            <input type="radio" class="pergunta" name="resposta5" value="incorreta"> A. A renúncia voluntária<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta5" value="incorreta"> B. Um impeachment por corrupção. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta5" value="correta"> C.Pressões políticas e militares que o forçaram a renunciar. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta5" value="incorreta"> D. Um assassinato.<br><!--respostas-->
             <p id="resultado_5" class="correto"></p><p id="errada5" class="errada"></p>
 
-            <h2 class="cor">Questão 6</h2>
-            <h3 class="letra">bla bla bla bla ?</h3>
-            <input type="radio" name="resposta6" value="correta"> A) <br>
-            <input type="radio" name="resposta6" value="incorreta"> B) <br>
-            <input type="radio" name="resposta6" value="incorreta"> C) <br>
-            <input type="radio" name="resposta6" value="incorreta"> D) <br>
+            <h2 class="cor">Questão 6</h2><!--questoes-->
+            <h3 class="letra">Durante a Segunda Guerra Mundial, o Brasil apoiou:</h3>
+            <input type="radio" class="pergunta" name="resposta6" value="correta"> A.Os Aliados. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta6" value="incorreta"> B.As Potências do Eixo. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta6" value="incorreta"> C. Manteve neutralidade.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta6" value="incorreta"> D. Lutou ao lado da Itália.<br><!--respostas-->
             <p id="resultado_6" class="correto"></p><p id="errada6" class="errada"></p>
 
-            <h2 class="cor">Questão 7</h2>
-            <h3 class="letra">bla bla bla bla ?</h3>
-            <input type="radio" name="resposta7" value="correta"> A) <br>
-            <input type="radio" name="resposta7" value="incorreta"> B) <br>
-            <input type="radio" name="resposta7" value="incorreta"> C) <br>
-            <input type="radio" name="resposta7" value="incorreta"> D) <br>
+            <h2 class="cor">Questão 7</h2><!--questoes-->
+            <h3 class="letra">Qual setor econômico foi alvo de políticas de incentivo durante a Era Vargas?</h3>
+            <input type="radio" class="pergunta" name="resposta7" value="incorreta"> A. Agricultura de subsistência.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta7" value="correta"> B. Indústria e urbanização.<br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta7" value="incorreta"> C.Pesca. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta7" value="incorreta"> D. Mineração.<br><!--respostas-->
             <p id="resultado_7" class="correto"></p><p id="errada7" class="errada"></p>
 
-            <h2 class="cor">Questão 8</h2>
-            <h3 class="letra">bla bla bla bla ?</h3>
-            <input type="radio" name="resposta8" value="correta"> A) <br>
-            <input type="radio" name="resposta8" value="incorreta"> B) <br>
-            <input type="radio" name="resposta8" value="incorreta"> C) <br>
-            <input type="radio" name="resposta8" value="incorreta"> D) <br>
+            <h2 class="cor">Questão 8</h2><!--questoes-->
+            <h3 class="letra">Como a Era Vargas impactou a política de industrialização no Brasil?</h3>
+            <input type="radio" class="pergunta" name="resposta8" value="correta"> A.Foi promovida a industrialização, com o Estado desempenhando um papel ativo na economia. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta8" value="incorreta"> B.Não houve políticas de industrialização durante esse período. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta8" value="incorreta"> C.A industrialização ocorreu naturalmente, sem intervenção do governo. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta8" value="incorreta"> D.A Era Vargas levou à desindustrialização. <br><!--respostas-->
             <p id="resultado_8" class="correto"></p><p id="errada8" class="errada"></p>
 
-            <h2 class="cor">Questão 9</h2>
-            <h3 class="letra">bla bla bla bla ?</h3>
-            <input type="radio" name="resposta9" value="correta"> A) <br>
-            <input type="radio" name="resposta9" value="incorreta"> B) <br>
-            <input type="radio" name="resposta9" value="incorreta"> C) <br>
-            <input type="radio" name="resposta9" value="incorreta"> D) <br>
+            <h2 class="cor">Questão 9</h2><!--questoes-->
+            <h3 class="letra">O que Getúlio Vargas criou em 1953 que se tornou um importante marco da política <br>
+                externa brasileira?</h3>
+            <input type="radio" class="pergunta" name="resposta9" value="incorreta"> A. A ONU (Organização das Nações Unidas). <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta9" value="incorreta"> B.A OTAN (Organização do Tratado do Atlântico Norte). <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta9" value="correta"> C.A Petrobras (Petróleo Brasileiro S.A.). <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta9" value="incorreta"> D. A Organização dos Estados Americanos (OEA). <br><!--respostas-->
             <p id="resultado_9" class="correto"></p><p id="errada9" class="errada"></p>
 
-            <h2 class="cor">Questão 10</h2>
-            <h3 class="letra">bla bla bla bla ?</h3>
-            <input type="radio" name="resposta10" value="correta"> A) <br>
-            <input type="radio" name="resposta10" value="incorreta"> B) <br>
-            <input type="radio" name="resposta10" value="incorreta"> C) <br>
-            <input type="radio" name="resposta10" value="incorreta"> D) <br>
+            <h2 class="cor">Questão 10</h2><!--questoes-->
+            <h3 class="letra">Qual foi o desfecho da Era Vargas para Getúlio Vargas em 1954?</h3>
+            <input type="radio" class="pergunta" name="resposta10" value="incorreta"> A.Ele se aposentou pacificamente. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta10" value="incorreta"> B.Foi reeleito para um terceiro mandato. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta10" value="incorreta"> C. Fugiu do país para evitar a prisão. <br><!--respostas-->
+            <input type="radio" class="pergunta" name="resposta10" value="correta"> D. Cometeu suicídio devido a pressões políticas e protestos. <br><!--respostas-->
             <p id="resultado_10" class="correto"></p><p id="errada10" class="errada"></p>
-            <button class="botao" type="button" onclick="botao_resposta()"> verificar</button>
+            <button class="botao" type="button" onclick="botao_resposta()"> verificar</button><!--botao-->
             <script src="script.js"></script>
         </form>
     </main>
     <footer>
-        <img class="vargas1" src="imagem/eravargas.jpg" alt="logo era vargas">
-        <div>
-            <li>
-                <ul>
-                    <p>
-                    <a href="https://instagram.com/ketley_celestino?igshid=MjEwN2IyYWYwYw==">Ketley Celestino</a><!--insta-->
-                    </p>
-                    <p>
-                    <a href="https://instagram.com/luana_tidre?igshid=NGExMmI2YTkyZg==">Luana Tidre</a><!--insta-->
-                    </P>
-                    <p>
-                    <a href="https://instagram.com/gui_bql_0106?igshid=MjEwN2IyYWYwYw==">Guilherme Braga</a><!--insta-->
-                    </p>
-                </ul>
-            
-            </li> 
-        </div>
-        
+        <img class="vargas1" src="imagem/eravargas.jpg" alt="logo era vargas"><!--imagem do rodape-->
     </footer>
 </body>
 
