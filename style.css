@@ -119,19 +119,18 @@ header img{/*logo*/
     font-size: large;
     margin-top: 24px;
     margin: 24px;
-    margin-left: 32%;
 }
 .cor{
     color: rgb(23, 47, 223);/*cor dos titulos*/
-    margin-left: 32%;
 }
 .letra{
     font-style: italic;/* fonte da letra*/
-    margin-left: 32%;
 }
 .titulo{
-    margin-left: 32%;
 }
 .pergunta{
+}
+form{
     margin-left: 32%;
+    margin-right: 32%;
 }
