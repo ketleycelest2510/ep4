@@ -134,3 +134,23 @@ form{
     margin-left: 32%;
     margin-right: 32%;
 }
+nav li{
+    display: inline;
+    margin: 1rem; 
+}
+
+nav a{
+    text-decoration: none; 
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    border: solid rgb(0, 0, 0);
+    background: rgb(84, 59, 192);
+    transition: 1s;
+}
+
+nav a:hover{ 
+    font-size: 1.1rem;
+    color: white; 
+    border: solid rgb(254, 254, 254); 
+    background: black; 
+}
